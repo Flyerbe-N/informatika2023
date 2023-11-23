@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device=wight, initial-scale=1">
+      <title>Formular pracovné miesto v leteckom podniku</title>
+      <style type="text/css">
+        table {
+          background-color: lightgrey;
+          border-collapse: collapse;
+        }
+        td {
+          padding: 10px;
+        }
+      </style>
+</HEAD>
+<body>
+  <form>
+  <table border="1" align="center">
+    |<tr>
+      <td width="130">Meno</td>
+      <td><input type="text" name="meno"></td>
+      <td>Heslo</td>
+      <td><input type="password" name="heslo"></td>
+    </tr>
+    <tr>
+      <td width="130">Odbor</td>
+      <td><input type="radio" name="odbor" value="pilot">pilot&nbsp;&nbsp;
+          <input type="radio" name="odbor" value="referent">referent
+          <input type="radio" name="odbor" value="predavač">predavač
+      </td>
+      <td>Trieda</td>
+      <td><select name="zelovoc">
+        <optgroup label="Prvy ročnik">
+        <option>1.A</option>
+        <option selected>1.B</option>
+        <option>1.C</option>
+        <option>1.D</option>
+      </optgroup>
+      <optgroup label="Druhy ročnik">
+        <option>2.A</option>
+        <option>2.B</option>
+        <option>2.C</option>
+        <option>2.D</option>
+      </optgroup>
+      </select>
+      </td>
+      </tr>
+<td> 
+    Voliteľne predmety
+      </td>
+      <td colspan="3">
+    <INPUT CHECKED TYPE="checkbox" NAME="pripomienky" VALUE="Informatika">Informatika
+    <INPUT TYPE="checkbox" NAME="Infraštuktura"
+    VALUE="paci_sa_mi_velmi">Infraštuktura
+    <INPUT TYPE="checkbox" NAME="Ekonomika"
+    VALUE="paci_sa_mi_velmi">Ekonomika
+    <INPUT TYPE="checkbox" NAME="Letecke_pravo"
+    VALUE="paci_sa_mi_velmi">Letecke Pravo
+  </td>
+<tr>
+<td>
+    Pripomienky
+</td>
+<td colspan="3">
+     <TEXTAREA ROWS="5" COLS="50" NAME="komentar">
+    chcem viac voliteľnych predmetov
+    </TEXTAREA>
+</td>
+</tr>
+<tr>
+<td colspan="2.5">
+  <INPUT TYPE="reset" VALUE="Vymazať">
+  </INPUT>
+</td>
+<td colspan="3">
+  <INPUT TYPE="submit" VALUE="Odoslať">
+</INPUT>
+</td>
+</tr>
+     </table>  
+    </select>
+</form>
+</body>
+</HTML>
